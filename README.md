@@ -7,6 +7,9 @@ A simple web app that takes user input and displays a personalized greeting usin
 - Shows validation message if input is empty
 - Changes background color dynamically
 
+  ## Preview
+![Preview](assets/screenshot.png)
+
 ## Run Locally
 Open index.html in your browser
 
