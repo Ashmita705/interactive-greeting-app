@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Interactive Page</h1>
+
+<input type="text" id="name" placeholder="Enter your name">
+<br>
+<button onclick="greet()">Click Me</button>
+
+<h2 id="message"></h2>
+
+<script>
+function greet() {
+    let name = document.getElementById("name").value;
+
+    if (name === "") {
+        document.getElementById("message").innerText = "Please enter your name!";
+    } else {
+        document.getElementById("message").innerText = "Hello " + name + "!";
+        document.body.style.backgroundColor = "#d4f4dd";
+    }
+}
+</script>
+
+</body>
+</html>
